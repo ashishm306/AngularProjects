@@ -1,0 +1,5 @@
+<div>
+    <input [checked]="todoitem.isCompleted" type="checkbox" (change)="updateTodoItem(todoitem)" />
+    <span class="px-1" [style.textDecoration]="todoitem.isCompleted?'line-through':'none'">{{todoitem.todo}}</span>
+    <i (click)="deleteTodoItem(todoitem.id)" class="fa-solid fa-trash-can float-end text-danger"></i>
+</div>

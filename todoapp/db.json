@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "756226f7-53ab-4caa-8508-8b9c6707f998",
+      "todo": "Pay Bills",
+      "isCompleted": true
+    },
+    {
+      "id": "44ca286e-dc21-4f4e-af96-90fa84a75504",
+      "todo": "Buy Groceries",
+      "isCompleted": true
+    }
+  ]
+}

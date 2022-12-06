@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-3" *ngFor="let c of contactData">
+        <mat-card class="example-card">
+            <mat-card-title>{{c.FirstName | uppercase}} {{c.LastName | uppercase}}</mat-card-title>
+            <mat-card-subtitle>{{c.Email}}</mat-card-subtitle>
+            <mat-card-content>
+                <p>{{c.City}}</p>
+                <p>{{c.Age | currency: 'INR'}}</p>
+                <p>{{c.Phone | phoneformat}}</p>
+                <p>{{currDate | date: 'MMMM dd yyyy'}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a mat-button routerLink="/edit/{{c.id}}">Edit</a>
+                <button mat-button (click)="DeleteContact(c.id)">Delete</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<ul class="list-group mt-2">
+    <li class="list-group-item" *ngFor="let x of countries; let i = index">{{i+1}} {{x}}</li>
+</ul>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of persons; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{person.fname}}</td>
+            <td>{{person.lname}}</td>
+            <td>{{person.email}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="isVisible">
+    <h2>Welcome to Angular</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi deleniti earum assumenda modi eos,
+        tenetur reiciendis, velit recusandae animi error repudiandae ipsa iure! Deserunt dolorum ducimus distinctio
+        possimus ex.</p>
+</div>

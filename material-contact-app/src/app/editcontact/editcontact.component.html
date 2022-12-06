@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="mt-2">
+                <h2 class="text-center">Update Contact Details</h2>
+            </div>
+            <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>First Name</mat-label>
+                    <input matInput formControlName="FirstName">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="FirstName?.dirty && FirstName?.errors?.['required']">
+                    First Name is required
+                </div>
+                <div class="text-danger" *ngIf="FirstName?.dirty && FirstName?.errors?.['pattern']">
+                    First Name is not valid
+                </div>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="LastName">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="LastName?.dirty && LastName?.invalid">
+                    Last Name is required
+                </div>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="Email">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="Email?.dirty && Email?.invalid">
+                    Email is required
+                </div>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Age</mat-label>
+                    <input matInput formControlName="Age">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="Age?.dirty && Age?.invalid">
+                    Age is required
+                </div>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input matInput formControlName="City">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="City?.dirty && City?.invalid">
+                    City is required
+                </div>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Phone</mat-label>
+                    <input matInput formControlName="Phone">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="Phone?.dirty && Phone?.invalid">
+                    Phone is required
+                </div>
+
+                <button mat-raised-button color="primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>

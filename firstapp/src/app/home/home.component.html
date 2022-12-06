@@ -1,0 +1,18 @@
+<h2>Welcome {{firstname}}</h2>
+
+<p>Hello {{person.fname}} {{person.lname}}</p>
+
+<p>{{2+2}}</p>
+
+<input type="text" placeholder="Enter Your Name" [disabled]="isDisabled" />
+
+<h2 [style.color]="isError?'red':'green'">Using Style Binding</h2>
+
+<h2 [style]="isError?errorStyle:successStyle">Using Style Binging with Multiple Styles</h2>
+
+<h2 [class]="classStyle">Using Class Binding</h2>
+
+<button class="btn btn-success" (click)="Show()">Submit</button>
+
+<input type="text" class="form-control mt-3" [(ngModel)]="username" placeholder="Enter Your Name" />
+<p class="mt-2">{{username}}</p>

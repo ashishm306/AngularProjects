@@ -1,0 +1,7 @@
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of todoData">
+            <app-todoitem (updateEvent)="updateItem($event)" (deleteEvent)="deleteItem($event)" [todoitem]="item"></app-todoitem>
+        </li>
+    </ul>
+</div>

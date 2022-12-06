@@ -1,0 +1,23 @@
+{
+  "contacts": [
+    {
+      "FirstName": "Peter",
+      "LastName": "Parker",
+      "Email": "Peter@hotmail.com",
+      "City": "New Delhi",
+      "Age": "25",
+      "Phone": "9236289123",
+      "id": 1
+    },
+    {
+      "FirstName": "James",
+      "LastName": "Cameron",
+      "Email": "James@gmail.com",
+      "Age": "30",
+      "City": "Mumbai",
+      "Phone": "9836982123",
+      "id": 3
+    }
+  ]
+}
+

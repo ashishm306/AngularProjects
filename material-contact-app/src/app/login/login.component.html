@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="mt-2">
+                <h2 class="text-center">Login</h2>
+            </div>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput #Email="ngModel" name="Email" id="Email" required [(ngModel)]="email">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="Email.dirty && Email.errors?.['required']">
+                    Email is required
+                </div>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput #Password="ngModel" name="Password" id="Password" required [(ngModel)]="password">
+                </mat-form-field>
+                <div class="text-danger" *ngIf="Password.dirty && Password.errors?.['required']">
+                    Password is required
+                </div>
+                <button id="btnLogin" mat-raised-button color="primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

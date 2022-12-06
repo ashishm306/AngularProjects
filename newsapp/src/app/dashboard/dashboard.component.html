@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let n of news">
+            <div class="card" style="width: 18rem;">
+                <img src="{{n.urlToImage}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{n.title}}</h5>
+                    <p class="card-text">{{n.description}}</p>
+                    <p class="card-text">{{n.author}}</p>
+                    <button class="btn btn-primary" (click)="AddNews(n)">Add to Favorites</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

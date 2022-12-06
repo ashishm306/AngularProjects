@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let user of users">
+            <div class="card mt-3" style="width: 18rem;">
+                <img src={{user.picture}} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">{{user.title}} {{user.firstName}} {{user.lastName}}</h2>
+                    <a routerLink="/profile/{{user.id}}" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

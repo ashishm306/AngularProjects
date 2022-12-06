@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="mt-2">
+                <input type="text" #username class="form-control form-control-sm" placeholder="Username">
+            </div>
+            <div class="mt-2">
+                <input type="password" class="form-control form-control-sm" placeholder="Password">
+            </div>
+            <div class="mt-2">
+                <button (click)="login(username.value)" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+</div>

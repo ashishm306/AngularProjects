@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-additem (addEvent)="getTodoItem($event)"></app-additem>
+<app-todolist (updateItemEvent)="updateTodoItem($event)" (deleteItemEvent)="deleteTodoItem($event)" [todoData]="todos"></app-todolist>
+<app-footer></app-footer>
